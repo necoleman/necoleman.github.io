@@ -1,6 +1,5 @@
 Hello world
 
+testing pdf embed
 
-{% html %}
-<a href="http://google.com">link</a>
-{% endhtml %}
+<iframe src="test_pdf.pdf" width="100%" height="780px"></iframe>
