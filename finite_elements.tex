@@ -233,31 +233,55 @@ Observing that $|v_p^{-1}(t)| = (1-t)P$ we have
 \end{align*}
 Likewise $\|v_q\|^2 = \frac{1}{12}Q$ and $\|v_r\|^2 \frac{1}{12}R.$
 
-To compute the inner product $\langle v_p, v_q\rangle_2$ of $v_p$ and $v_q$ we foliate $T$ by lines parallel to $R$, which are level sets of $v_r$.
-\[ \langle v_p, v_q\rangle = \int_0^1 \int_{v_r^{-1}(t)} v_pv_q\ dt \]
-We use a linear parametrization of $v_r^{-1}(t)$ with independent variable $s$, traversing from $P$ when $s=0$ to $Q$ when $s = 1$.
-
-In abuse of notation re-use the symbols $v_p, v_q$ for their restrictions to $v_r^{-1}(t)$. Then $v_p(0) = 0$ and $v_p(1) = (1-t)$, while $v_q(0) = 1-t$ and $v_q(1) = 0$. So $v_p(s) = s(1-t)$ and $v_q(s) = (1-s)(1-t)$.
+To compute the inner product $\langle v_q, v_r\rangle_2$ of $v_p$ and $v_q$ we foliate $T$ by lines parallel to $P$, which are level sets of $v_p$.
+\[ \langle v_q, v_r\rangle = \int_0^1 \int_{v_p^{-1}(t)} v_qv_r\ dt \]
+We use a linear parametrization of $v_p^{-1}(t)$ with independent variable $s$, traversing from $tp + (1-t)q$ when $s=0$ to $tp + (1-t)r$ when $s=1$:
+\[ s\mapsto s(tp + (1-t)r) + (1-s)(tp + (1-t)q) = tp + s(1-t)r + (1-s)(1-t)q\]
+As the coefficients sum to one, they are barycentric coordinates. 
+In abuse of notation re-use the symbols $v_q, v_r$ for their restrictions to $v_p^{-1}(t)$.  Then $v_q(s) = (1-s)(1-t)$ and $v_r(s) = s(1-t)$.
 
 Thus
-\[ \int_{v_r^{-1}(t)} v_pv_q = \int_0^1 s(1-s)(1-t)^2 R\ ds = \frac{1}{6}R(1-t)^2 \]
+\[ \int_{v_p^{-1}(t)} v_qv_r = \int_0^1 s(1-s)(1-t)^2\ ds = \frac{1}{6}(1-t)^2 \]
 and so
 \begin{align*}
-\langle v_p, v_q\rangle_2 &= \int_0^1 \frac{1}{6} R(1-t)^2\ dt \\
-	&= \frac{1}{18}R
+\langle v_q, v_r\rangle_2 &= \int_0^1 \frac{1}{6}(1-t)^2\ dt \\
+	&= \frac{1}{18}
 \end{align*}
 
 The $L^2$ norm of $\nabla v_p$ is nothing more than
-\[\|\nabla v_p \|^2 = \frac{(q_y - r_y)^2 + (q_x - r_x)^2}{4A_T^2} = \frac{P^2}{4A_T^2} \]
+\[\|\nabla v_p \|^2 = \int_T\frac{(q_y - r_y)^2 + (q_x - r_x)^2}{4A_T^2} = \frac{P^2}{4A_T} \]
 
 The inner product of $\nabla v_p$ and $\nabla v_q$ is
 \[ \langle \nabla v_p, \nabla v_q \rangle = -\frac{1}{4A_T^2}\bigg( (q_y - r_y)(p_y - r_y) + (q_x - r_x)(p_x - r_x)\bigg) = -\frac{\langle q-r, p-r\rangle}{4A_T^2} \]
 This can also be interpreted as proportional to the cosine of the interior angle at $r$:
-\[ \langle \nabla v_p, \nabla v_q\rangle = -\frac{1}{4A_T^2}PQ\cos\theta_r\]
+\[ \langle \nabla v_p, \nabla v_q\rangle = -\frac{1}{4A_T}PQ\cos\theta_r\]
 
 \section*{Triangulations and elements}
 
-Let $\Omega\subset\mathbb{R}^2$ be a precompact domain with piecewise linear boundary.
+Let $\Omega\subset\mathbb{R}^2$ be a precompact domain with piecewise linear boundary. Let $\mathcal{T}$ be a triangulation of $\Omega$ such that:
+\begin{itemize}
+\item Each triangle is nondegenerate
+\item No triangle has a vertex in the interior of its face
+\item $\ldots$
+\end{itemize}
+Such a triangulation is ``regular.''
+
+For a vertex $p$ of the triangulation, define
+\[
+\delta_p(x) = \begin{cases}
+v_p(x), & x \mbox{ in the interior of a triangle adjacent to $p$ } \\
+0, & \mbox{else}
+\end{cases}
+\]
+It is easily checked that $\delta_p$ is piecewise linear.
+
+The space $V_\mathcal{T}$ spanned by the $\delta_p$ is a finite-dimensional subspace of $H^1(\Omega)$. Problems in $H^1(\Omega)$ can be weakly approximated by linear algebra in $V_\mathcal{T}$.
+
+The $H^1$ norm of $\delta_p$ can be computed as follows:
+\begin{align*}
+\| \nabla \delta_p \|^2 &= \sum_{T\ni p} \| \nabla v_p \|^2 \\
+	&= \sum_{T\ni p} \frac{1}{12}(\mbox{length of far side of $T$})
+\end{align*}
 
 
 
