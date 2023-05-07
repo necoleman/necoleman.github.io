@@ -8,4 +8,4 @@ categories: Projects,Math
 
 Test of using an iframe to embed a pdf:
 
-<iframe src="_posts/finite_elements.pdf" width="100%" height="780px"></iframe>
+<iframe src="finite_elements.pdf" width="100%" height="780px"></iframe>

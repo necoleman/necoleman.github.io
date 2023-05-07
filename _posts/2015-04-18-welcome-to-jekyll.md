@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-04-18T14:25:52-05:00
-author: Ben Centra
-categories: Jekyll
+title:  "Markdown reference and test"
+date:   2023-05-07
+author: Ben Centra, modified by Neal Coleman
+categories: Markdown/Jekyll
 tags:	jekyll welcome
 cover:  "/assets/instacode.png"
 ---
