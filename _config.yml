@@ -12,7 +12,6 @@ exclude:
 title: Thoughts
 subtitle: "Place where I put writing"
 email: "neal@curiouscolemans.net"
-twitter: @necoleman
 name: "Neal Coleman"
 description: >
   A simple yet classy theme for your Jekyll website or blog.
@@ -83,14 +82,14 @@ social:
     username: TheBenCentra
     url: https://twitter.com/TheBenCentra
     desc: Follow me on Twitter
-    share: true
+    share: false
 
   - name: Facebook
     icon: facebook
     username: thebencentra
     url: ""
     desc: Friend me on Facebook
-    share: true
+    share: false
 
   - name: GitHub
     icon: github
