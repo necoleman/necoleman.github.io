@@ -3,7 +3,9 @@ layout: post
 title:  "Finit elements"
 date:   2023-05-06
 author: Neal Coleman
-categories: Projects,Math
+categories:
+    - Projects
+    - Math
 ---
 
 Test of using an iframe to embed a pdf:
