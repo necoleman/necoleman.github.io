@@ -53,6 +53,11 @@ jekyll-archives:
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
+# not sure what this does
+# https://stackoverflow.com/questions/60495790/file-to-import-not-found-or-unreadable-with-jekyll-and-sass
+load_paths:
+  - _sass
+
 # Category descriptions (for archive pages)
 descriptions:
   - cat: jekyll
