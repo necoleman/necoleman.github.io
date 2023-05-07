@@ -53,6 +53,15 @@ demo("hello, world!", 10);
 
 Syntax highlighting is done using [highlight.js][highlight]. You can change the active theme in [head.html](https://github.com/bencentra/centrarium/blob/2dcd73d09e104c3798202b0e14c1db9fa6e77bc7/_includes/head.html#L15).
 
+### Math
+
+Testing math 
+
+The $k^{th}$ eigenvalue of the operator associated to the quadratic form $q$ is characterized by $\operatorname{min}_{E^k\subset H} \operatorname{max}_{u\in E^k} \frac{ q(u,u) }{ (u, u) }$
+
+Stokes' theorem holds that for an $(n-1)$-form $\eta$ defined on $\partial\Omega$,
+$$ \int_\Omega d\eta = \int_{\partial\Omega} \eta $$
+
 ### Images
 
 Lightbox has been enabled for images. To create the link that'll launch the lightbox, add <code>data-lightbox</code> and <code>data-title</code> attributes to an <code>&lt;a&gt;</code> tag around your <code>&lt;img&gt;</code> tag. The result is:
