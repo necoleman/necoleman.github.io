@@ -55,6 +55,9 @@ jekyll-archives:
 
 # not sure what this does
 # https://stackoverflow.com/questions/60495790/file-to-import-not-found-or-unreadable-with-jekyll-and-sass
+# https://stackoverflow.com/questions/24587666/scss-import-in-jekyll-2-1
+# sass:
+#   - sass_dir: _sass
 load_paths:
   - _sass
 
