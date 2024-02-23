@@ -1,8 +1,8 @@
 <nav class="menu" tabindex="0">
 	<div class="smartphone-menu-trigger"></div>
   <header class="avatar">
-		<img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
-    <h2>John D.</h2>
+		<img src="assets/missing.png" />
+    <h2>TEST</h2>
   </header>
 	<ul>
     <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
