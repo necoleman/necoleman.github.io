@@ -1,21 +1,14 @@
-<nav class="menu" tabindex="0">
-	<div class="smartphone-menu-trigger"></div>
-  <header class="avatar">
-		<img src="assets/missing.png" />
-    <h2>TEST</h2>
-  </header>
-	<ul>
-    <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
-    <li tabindex="0" class="icon-customers"><span>Customers</span></li>
-    <li tabindex="0" class="icon-users"><span>Users</span></li>
-    <li tabindex="0" class="icon-settings"><span>Settings</span></li>
-  </ul>
-</nav>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+  </head>
+  <body>
+    <img src="images/firefox-icon.png" alt="My test image" />
+    # Test page
 
-<main>
-  <div class="helper">
-    RESIZE THE WINDOW
-		<span>Breakpoints on 900px and 400px</span>
-  </div>
-  <embed src="assets/1508.07346.pdf" type="application/pdf" />
-</main>
+    <embed src="assets/1508.07346.pdf" type="application/pdf" />
+
+  </body>
+</html>
