@@ -17,5 +17,5 @@
     RESIZE THE WINDOW
 		<span>Breakpoints on 900px and 400px</span>
   </div>
-  <embed src="assets/download/sample.pdf" type="application/pdf" />
+  <embed src="assets/1508.07346.pdf" type="application/pdf" />
 </main>
