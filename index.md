@@ -37,7 +37,7 @@ def here(is: Some):
 
 This is a test pdf
 
-<embed src="assets/1508.07346.pdf" type="application/pdf" />
+<embed src="/assets/1508.07346.pdf" type="application/pdf" />
 
 
 
