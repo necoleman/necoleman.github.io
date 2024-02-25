@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+navigation {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+}
