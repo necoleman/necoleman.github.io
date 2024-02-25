@@ -30,6 +30,7 @@ body {
     padding: 1em;
     /* box-shadow: 0 0 10px 0 #000; */
     margin: auto;
+    display: flex
 }
 
 header {
@@ -54,7 +55,12 @@ footer {
     align-items: center;
     text-align: center;
     margin: auto;
-    color: #f9f9f9;
+    h5: {
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        color: #f9f9f9;
+    }
 }
 
 .pdfreader {
