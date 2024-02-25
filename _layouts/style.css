@@ -9,11 +9,13 @@ body {
 
 .outer {
     margin: 0 auto;
-    width: 80%;
-    background-color: #fff;
-    padding: 0em;
-    box-shadow: 0 0 10px 0 #000;
-
+    /* width: 80%; */
+    /* background-color: #fff; */
+    /* padding: 0em;
+    box-shadow: 0 0 10px 0 #000; */
+    align-items: center;
+    align-content: center;
+    margin: auto;
 }
 
 .inner {
@@ -22,20 +24,33 @@ body {
     align-items: center;
     background-color: #f9f9f9;
     padding: 1em;
-    box-shadow: 0 0 10px 0 #000;
+    /* box-shadow: 0 0 10px 0 #000; */
     margin: auto;
 }
 
 header {
     background-color: #333;
     padding: 1em 0;
+    align-content: center;
+    align-items: center;
     text-align: center;
+    margin: auto;
     h1 {
         margin: 0;
-        padding: 0;
-        color:#f4f4f4
+        padding: 0;    
+        background-color: #333;
+        color: #f9f9f9;
     }
+}
 
+footer {
+    background-color: #333;
+    padding: 1em 0;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: #f9f9f9;
 }
 
 .pdfreader {
@@ -60,13 +75,15 @@ header {
         float: right;
     }
     a {
+        text-decoration: none;
         display: block;
         padding: 8px;
-        background-color: #dddddd;
+        background-color: #333;
+        color: #f9f9f9;
     }
 
     li a:hover {
-        background-color: #111;
+        background-color: #999;
     }
 
     .active {
