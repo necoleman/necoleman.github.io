@@ -1,4 +1,4 @@
 theme: jekyll-theme-slate
-
-title: Itinerant Data Scientist
-description: Ideas: Rigorous, Reproducible, and Relevant
+site:
+  title: Itinerant Data Scientist
+  description: Ideas: Rigorous, Reproducible, and Relevant
