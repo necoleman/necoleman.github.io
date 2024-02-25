@@ -4,19 +4,25 @@
 @import "{{ site.theme }}";
 
 .navigation {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 20px;
-    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    li: {
+        float: left;
+    }
     a {
         display: block;
         color: #fff;
+        text-align: center;
         text-decoration: none;
-        margin-right: 10px;
+        padding: 14px 16px;
     }
     a:hover {
-        text-decoration: underline;
         color: #eee
+    }
+    .active {
+        background-color: #4CAF50;
     }
 }
