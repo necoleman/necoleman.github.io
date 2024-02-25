@@ -9,8 +9,12 @@ navigation {
     padding: 10px;
     margin-bottom: 20px;
     a {
+        display: block
         color: #fff;
         text-decoration: none;
         margin-right: 10px;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
