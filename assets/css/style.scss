@@ -12,6 +12,10 @@ body {
     background-color: #f4f4f4;
 }
 
+h1 {
+    justify-content: center
+}
+
 .outer {
     margin: 0 auto;
     /* width: 80%; */
@@ -54,6 +58,7 @@ footer {
     align-items: center;
     text-align: center;
     margin: auto;
+    color: #f9f9f9;
     h5: {
         margin: 0;
         padding: 0;
