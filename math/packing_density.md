@@ -6,4 +6,4 @@ So I wrote the below. After uploading, I learned there was an earlier paper of U
 
 You can find the paper on [here](https://arxiv.org/abs/1508.07346) on the ArXiv.
 
-<embed class="pdfreader" src="/assets/math/1508.07346.pdf" type="application/pdf" alt="Arxiv article 1508.07346, 'Bounding Eigenvalues with Packing Density'">
+<embed class="pdfreader" src="/assets/math/1508.07346.pdf#view=FitH" type="application/pdf" alt="Arxiv article 1508.07346, 'Bounding Eigenvalues with Packing Density'">
