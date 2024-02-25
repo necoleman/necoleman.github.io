@@ -11,13 +11,12 @@ body {
     margin: 0 auto;
     width: 80%;
     background-color: #fff;
-    padding: 1em;
+    padding: 0em;
     box-shadow: 0 0 10px 0 #000;
 
 }
 
 .inner {
-    padding: 1em;
     width: 50%;
     align-content: center;
     align-items: center;
@@ -39,6 +38,15 @@ header {
 
 }
 
+.pdfreader {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+/* Navigation bar
+/* For wide screens, on left
+/* For narrow screens, on right */
 .nav {
     background-color: #333;
     ul {
