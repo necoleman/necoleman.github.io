@@ -11,8 +11,8 @@ nav {
     overflow: hidden;
     background-color: #333;
     li: {
-        float: right;
-        display: inline-block;
+        float: left;
+        display: inline;
     }
     a {
         display: block;
@@ -22,7 +22,7 @@ nav {
         padding: 14px 16px;
     }
     a:hover {
-        color: #eee
+        background-color: #eee
     }
     .active {
         background-color: #4CAF50;
