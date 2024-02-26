@@ -1,6 +1,6 @@
 # Projects
 
-This is a selection of projects I've worked on.
+This is a selection of projects I've enjoyed working on.
 
 ## fepy
 
