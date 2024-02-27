@@ -123,6 +123,13 @@ footer {
     margin: 10%;
     box-shadow: 0 0 10px 0 #000;
     margin: auto;
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
 }
 
 /* Navigation bar
