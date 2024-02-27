@@ -113,8 +113,19 @@ footer {
     height: 300px;
     width: 300px;
     box-shadow: 0 0 10px 0 #000;
-    text-align: center;
+    text-align: justify;
     text-justify: newspaper;
+
+    h3 {
+        text-align: center;
+    }
+    
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
 }
 
 .content {
@@ -124,12 +135,6 @@ footer {
     box-shadow: 0 0 10px 0 #000;
     margin: auto;
 
-    a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-    }
 }
 
 /* Navigation bar
