@@ -109,10 +109,20 @@ footer {
     justify-content: center;
 }
 
+
+.content {
+    // width: 100%;
+    margin: auto;
+    // box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+
+}
+
 .postcard {
     height: 300px;
     width: 300px;
-    box-shadow: 0 0 10px 0 #000;
+    margin: 10%;
+    // box-shadow: 0 0 10px 0 #000;
     text-align: justify;
     text-justify: newspaper;
 
@@ -128,14 +138,6 @@ footer {
     }
 }
 
-.content {
-    // width: 100%;
-    margin: auto;
-    margin: 10%;
-    box-shadow: 0 0 10px 0 #000;
-    margin: auto;
-
-}
 
 /* Navigation bar
 /* For wide screens, on left
