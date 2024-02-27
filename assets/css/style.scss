@@ -105,6 +105,13 @@ footer {
 
 .posts {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.postcard {
+    height: 600px;
+    width: 600px;
 }
 
 .content {
