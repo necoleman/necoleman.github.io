@@ -107,6 +107,14 @@ footer {
     display: flex;
 }
 
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+}
+
 /* Navigation bar
 /* For wide screens, on left
 /* For narrow screens, on right */

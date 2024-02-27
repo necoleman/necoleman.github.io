@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.scss">
     <title>Black coffee. Neat scotch.</title>
   </head>
 
@@ -32,15 +32,18 @@
         <h1>Welcome!</h1>
         <p>Here, I keep track of some interesting thoughts I've had.</p>
       </section>
-      <section class="posts">
+      <section id="flexible_content" class="content">        
         <h2>Recent Posts</h2>
-        <div>Item 1</div>
-        <div>Item 2</div>
+        <section class="posts">
+            <div>Item 1</div>
+            <div>Item 2</div>
+        </section>
+        </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer" class="outer">
-      <footer><h5>© Neal Coleman, 2024-present</h5></footer>
+      <footer class="inner"><h5>© Neal Coleman, 2024-present</h5></footer>
     </div>
   </body>
 </html>
