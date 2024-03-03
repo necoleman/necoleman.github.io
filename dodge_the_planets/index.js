@@ -31,9 +31,9 @@ window.main = function () {
     window.requestAnimationFrame(main);
 }
 
-main();
+// window.main();
 
-// window.requestAnimationFrame(main);
+window.requestAnimationFrame(main);
 
 
 // for (var j = 0; j < 1; j++) {
