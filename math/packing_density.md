@@ -8,7 +8,8 @@ You can find the paper on [here](https://arxiv.org/abs/1508.07346) on the ArXiv.
 
 <div class="pdfcontainer">
 <embed 
-    src="/assets/math/1508.07346.pdf#view=FitH" type="application/pdf
-    class="pdfreader"
-    alt="Arxiv article 1508.07346, 'Bounding Eigenvalues with Packing Density'">
+  src="/assets/math/1508.07346.pdf#view=FitH"
+  type="application/pdf"
+  class="pdfreader"
+  alt="Arxiv article 1508.07346, Bounding eigenvalues with packing density">
 </div>

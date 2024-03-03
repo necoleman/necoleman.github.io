@@ -5,7 +5,7 @@ In grad school, I studied spectral geometry: The relationship between the geomet
 My advisor was [Chris Judge](https://cjudge.pages.iu.edu) at Indiana University. I defended my [dissertation](math/dissertation.html) in December 2017. I still enjoy thinking about math.
 
 Things that I've written:
-- [Laplace Subspectrality](math/dissertation.html), my dissertation
+- [Laplace Subspectrality](math/laplace_subspectrality.html), my dissertation
 - [Bounding eigenvalues with packing density](math/packing_density.html)
 - [Polya's conjecture is false for spheres](math/spheres.html)
 
