@@ -212,7 +212,7 @@ class Ship extends SpaceObject {
         super(xCoord, yCoord, 0, 0, 0, 0);
         this.angle = angle;
         this.fuelLeft = fuelLeft;
-        this.fuelUseOnMouseDown = 0;// 0.001;
+        this.fuelUseOnMouseDown = 0.01;
         this.accel = 50;
         this.recordCollisions = true;
         this.isRocketing = false;
