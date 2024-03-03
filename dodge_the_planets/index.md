@@ -1,3 +1,5 @@
+# Dodge the Planets
+
 <div id="game_challenge">How long can you dodge the planets?? You've hit the planets 0 times and you have 100% fuel
     left</div>
 
@@ -10,5 +12,3 @@
 <canvas id="fuel_pane" width="10" height="800" style="border:1px solid #000000;"></canvas>
 
 <script src="index.js" type="module"></script>
-
-<p><a href="/index.html">Return home</a></p>
