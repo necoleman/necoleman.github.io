@@ -1,15 +1,13 @@
-import { NeuralNet } from "./model.js"
-
 export class Game {
 
-    constructor(mouseControl, maxX, maxY, numPlanets) {
+    constructor(maxX, maxY, numPlanets) {
         this.ship = new Ship(maxX / 2, maxY / 2, 0, 1);
         this.numPlanets = numPlanets;
         this.spaceObjectList = new Array(0);
         do {
             this._generatePlanet(this.spaceObjectList, maxX, maxY);
         } while (this.spaceObjectList.length < numPlanets);
-        this.mouseControl = mouseControl;
+        this.mouseControl = true;
         this.mouseX = 0;
         this.mouseY = 0;
         this.mouseDown = false;
@@ -18,21 +16,6 @@ export class Game {
         this.maxY = maxY;
         this.G = 300;
         this.collisionCount = 0;
-        // TODO: Make reinforcement learner its own object
-        // Model: Neural network with 4 inputs for each input in the gameState (x, y, vx, vy)
-        // and two real-valued inputs (possible values for angle to point & accelerate/no-accelerate)
-        // this will populate 64 real-valued outputs (32 angles to point in * accelerate/no-accelerate)
-        // to represent the search space of possible moves
-        // this.model = new NeuralNet(4*(this.spaceObjectList.length + 1), 16);
-        // this.model.addDenseLayer(32);
-        // this.model.addDenseLayer(64);
-        this.model = new NeuralNet(4 * (this.spaceObjectList.length + 1) + 2, 1, "LOGISTIC");
-        // this.model.addDenseLayer(8, "LOGISTIC");
-        // this.model.addDenseLayer(16, "LOGISTIC");
-        this.model.addDenseLayer(1, "");
-        this.learningRate = 0.1; // TODO make this decrease exponentially with time
-        this.predictedValue = 0;
-        this.chosenMoves = { "angle": 0, "rocket": false }
     }
 
     _generatePlanet(spaceObjectList, maxX, maxY, minRadius, maxRadius) {
@@ -126,16 +109,6 @@ export class Game {
         } while (this.spaceObjectList.length < this.numPlanets);
     }
 
-    switchControl() {
-        // change control from mouse to model or from model to mouse
-        this.mouseControl = !this.mouseControl;
-    }
-
-
-    drawModel(modelPane) {
-        // draw model
-        this.model.drawSelf(modelPane);
-    }
 
 }
 

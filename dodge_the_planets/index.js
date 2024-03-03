@@ -6,7 +6,7 @@ import { Game } from "./game.js"
 var mainPane = document.getElementById("main_pane");
 var fuelPane = document.getElementById("fuel_pane");
 var challengeDiv = document.getElementById("game_challenge");
-var gameState = new Game(true, mainPane.height, mainPane.width, 5);
+var gameState = new Game(mainPane.height, mainPane.width, 5);
 
 mainPane.addEventListener("mousedown", event => {
     gameState.onMouseDown(event);
