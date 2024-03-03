@@ -12,5 +12,5 @@ The code can be found [here](https://github.com/necoleman/fepy).
 
 When I was first learning to program, I made a client-side javascript game: [Dodge the Planets](https://github.com/necoleman/dodge_the_planets)
 
-
+You can play a version of it [here](dodge_the_planets/index.html)
 
