@@ -24,21 +24,20 @@ mainPane.addEventListener("mousemove", event => {
 var resetButton = document.getElementById("reset_button");
 resetButton.addEventListener("mouseup", event => { gameState.resetGame() })
 
-// window.main = function () {
-//     window.requestAnimationFrame(main);
-//     gameState.updateGame();
-//     gameState.drawGame(mainPane, fuelPane);
-//     gameState.drawModel(modelPane);
-//     gameState.updateChallenge(challengeDiv);
-// }
+window.main = function () {
+    window.requestAnimationFrame(main);
+    gameState.updateGame();
+    gameState.drawGame(mainPane, fuelPane);
+    gameState.updateChallenge(challengeDiv);
+}
 
 // main();
 console.log("RANDOM ARRAY", Array.from({ length: 5 }, () => Math.random() - 0.5))
 
 
-for (var j = 0; j < 1; j++) {
-    // window.requestAnimationFrame(main);
-    gameState.updateGame();
-    gameState.drawGame(mainPane, fuelPane);
-    gameState.updateChallenge(challengeDiv);
-}
+// for (var j = 0; j < 1; j++) {
+//     // window.requestAnimationFrame(main);
+//     gameState.updateGame();
+//     gameState.drawGame(mainPane, fuelPane);
+//     gameState.updateChallenge(challengeDiv);
+// }
