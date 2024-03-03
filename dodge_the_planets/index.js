@@ -25,18 +25,19 @@ var resetButton = document.getElementById("reset_button");
 resetButton.addEventListener("mouseup", event => { gameState.resetGame() })
 
 window.main = function () {
-    window.requestAnimationFrame(main);
     gameState.updateGame();
     gameState.drawGame(mainPane, fuelPane);
     gameState.updateChallenge(challengeDiv);
+    window.requestAnimationFrame(main);
 }
 
-// main();
-console.log("RANDOM ARRAY", Array.from({ length: 5 }, () => Math.random() - 0.5))
+main();
+
+// window.requestAnimationFrame(main);
 
 
 // for (var j = 0; j < 1; j++) {
-//     // window.requestAnimationFrame(main);
+//     window.requestAnimationFrame(main);
 //     gameState.updateGame();
 //     gameState.drawGame(mainPane, fuelPane);
 //     gameState.updateChallenge(challengeDiv);
