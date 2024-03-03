@@ -74,31 +74,6 @@ export class Game {
         return stateArray;
     }
 
-    predictMove() {
-        // extract gameState and use it to generate values
-        console.log("COMPUTING VALUE FUNCTION")
-        var gameState = this.extractGameState();
-        var possibleMoves = [0, 1, 2, 3, 4, 5, 6, 7]
-        var numAngles = 4;
-        var valueFunc = new Array(0);
-        for (var j = 0; j < possibleMoves.length; j++) {
-            var angle = 2 * Math.PI * possibleMoves[j] % 2 / (possibleMoves.length / 2)
-            var accel = (j > possibleMoves.length / 2 - 1) ? 1 : 0
-            valueFunc.push(this.model.predict(gameState.concat([angle, accel])))
-        }
-        var argMax = (Math.random() < this.learningRate) ? Math.floor(Math.random() * valueFunc.length) : valueFunc.map((x, i) => [x, i]).reduce((r, a) => (a[0] > r[0] ? a : r))[1]
-        var finalAngle = 2 * Math.PI * (argMax % numAngles) / numAngles;
-        var rocket = (argMax > valueFunc.length / 2);
-        // console.log("GAME STATE", gameState);
-        console.log("VALUE FUNCTION", valueFunc);
-        console.log("ARGMAX", argMax);
-        console.log("ANGLE", finalAngle);
-        console.log("ACCELERATE", argMax > 3)
-        this.predictedValue = valueFunc[argMax];
-        this.chosenMoves = { "angle": finalAngle, "rocket": rocket }
-        return this.chosenMoves
-    }
-
     /** Game update methods */
 
     updateGame() {
@@ -107,34 +82,6 @@ export class Game {
         this.ship.updateSelf(this);
         this.spaceObjectList.map(spaceObject => spaceObject.updateSelf(this));
         this.updateModel();
-    }
-
-    updateModel() {
-        // check model prediction and backpropagate
-        console.log("UPDATING MODEL")
-        var gameState = this.extractGameState();
-        var angle = this.chosenMoves["angle"];
-        var rocket = this.chosenMoves["rocket"] ? 1 : 0;
-        console.log("\tChosen angle", angle);
-        console.log("\tRocketing", rocket);
-        this.predictedValue = this.model.predict(gameState.concat([angle, rocket]));
-
-        var actualValue = 0;
-        if (this.ship.isColliding === true) {
-            actualValue = -10;
-        }
-        var minimizer = (accumulator, planet) => {
-            return Math.floor(accumulator,
-                Math.pow(Math.pow(planet.x - this.ship.x, 2) + Math.pow(planet.x - this.ship.x, 2), 0.5)
-            )
-        }
-        var minDistance = this.spaceObjectList.reduce(minimizer, 5);
-        actualValue = actualValue + Math.exp(-minDistance);
-        if (this.ship.isRocketing) { actualValue = actualValue - 0.5 }
-        console.log("ACTUAL VALUE", actualValue)
-        console.log("PREDICTED VALUE", this.predictedValue)
-        this.model.backpropagate(this.predictedValue, actualValue);
-        console.log("BACKPROPAGATION COMPLETE")
     }
 
     drawGame(canvas, fuelPane) {
