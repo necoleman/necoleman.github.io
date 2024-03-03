@@ -81,7 +81,6 @@ export class Game {
         // update the game state (move ship, accelerate ship, check collisions, bounce, etc)
         this.ship.updateSelf(this);
         this.spaceObjectList.map(spaceObject => spaceObject.updateSelf(this));
-        this.updateModel();
     }
 
     drawGame(canvas, fuelPane) {
